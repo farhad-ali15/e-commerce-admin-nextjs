@@ -39,7 +39,8 @@ export default async function handle(req, res) {
         ContentType: mime.lookup(file.path),
       })
     );
-    const link = `https://${bucketName}.s3.amazonaws.com/${newFilename}`;
+
+    const link = `https://${bucketName}.s3.ap-south-1.amazonaws.com/${newFilename}`;
     links.push(link);
   }
   return res.json({ links });
