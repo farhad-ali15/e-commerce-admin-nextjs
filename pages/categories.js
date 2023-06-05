@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { withSwal } from "sweetalert2";
+import { withSwal } from "react-sweetalert2";
 
 function Categories({ swal }) {
   const [editedCategory, setEditedCategory] = useState(null);
